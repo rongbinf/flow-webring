@@ -2,7 +2,7 @@
 title: ~Flow~
 layout: html
 ---
-<h1>~Flow~</h1>
+<h1 id="introduction">~Flow~</h1>
 <p>This is a <a href=https://en.wikipedia.org/wiki/Webring>webring</a> working as a bookmark to collect people's flows. It can be about how you manage your knowledge (this is actually the inital purpose), brew coffee, write codes, spend an ordinary Sunday afternoon, research, create, and many more. It is about <b>you</b> and <b>your way of life</b>.
 
 <p>It's good to have a <em>flow</em>. 
@@ -23,5 +23,6 @@ layout: html
 <li><a href="{{member.url | xml_escape}}">{{member.name | xml_escape | newline_to_br}}</a>: {{member.intro}}{% endfor %}
 </ul>
 
+<h2 id="credits">Credits</h2>
 <p>This webring is created with the help of <a href="https://mincerafter42.github.io/tutorial/webring" target="_blank">this article</a>.
 <p>CC0
