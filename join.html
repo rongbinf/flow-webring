@@ -39,7 +39,12 @@ layout: html
 </ul>
 <p>You can simply copy and paste the following code into your <code>footer</code> area: (for example, your <em>flow page</em>)
 <pre>
-<a href="{{'/YOUR-SLUG/previous'|absolute_url}}">←</a>
-<a href="{{'/'|absolute_url}}">~Flow~</a>
-<a href="{{'/YOUR-SLUG/next'|absolute_url}}">→</a>
+{% raw %}
+<p style="display:flex;justify-content:space-evenly;">
+<a href="{{ '/YOUR-SLUG/previous' | absolute_url }}">←</a>
+<a href="{{ '/' | absolute_url }}">~Flow~</a>
+<a href="{{ '/YOUR-SLUG/next' | absolute_url }}">→</a>
+</p>
+{% endraw %}
 </pre>
+        
