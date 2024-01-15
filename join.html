@@ -1,5 +1,5 @@
 ---
-title: How to Join | Flow.
+title: How to Join ~Flow~
 layout: html
 ---
 <h1>How to Join</h1>
@@ -20,16 +20,26 @@ layout: html
 </ul>
 
 <h2>Add yourself to the members list</h2>
-<p>Fork this repo, add a unique slug, your webpage's name, and your webpage's URL to <code>/_data/members.csv</code>, then submit this PR with a distinct title: 
+<p>Fork this repo, add a unique slug, your webpage's name, your webpage's URL, and a short introduction sentence to <code>/_data/members.csv</code>, then submit this PR with a distinct title: 
 <ul>
 <li>Add <code>your URL here</code>
 <li>or Update <code>your URL here</code>
 </ul>
+<p>If you have multiple flow pages (e.g. one for knowledge management, one for housekeeping, and one for selecting music), please only add <b>one</b> URL. You can direct readers to other pages using your own page.</p>
 
 <h2>If you don't have a GitHub account</h2>
-<p>Simply send me <a href="mailto:hi@fanrongbin.com?subject=Add%20%5Byour%20URL%20here%5D%20to%20Flow%20Webring">an email</a>
+<p>Shoot me <a href="mailto:hi@fanrongbin.com?subject=Add%20%5Byour%20URL%20here%5D%20to%20Flow%20Webring">an email</a>, or contact me in <a href="https://fanrongbin.com/contact">other preferred ways</a>.
 
-<h1>Add links on your webpage</h1>
-<p>Once you're on the members list, add links on your webpage to <b>{{'/YOUR-SLUG/next'|absolute_url}}</b> and <b>{{'/YOUR-SLUG/previous'|absolute_url}}</b>, replacing <b>YOUR-SLUG</b> with the slug you chose.<br>
-Feel free to include a link to <b>{{'/'|absolute_url}}</b> as well.<br>
-Check if <a href=https://html.spec.whatwg.org/dev/sections.html#the-aside-element>the <code>&lt;aside&gt;</code> element</a> is right for you.
+<h1>Add this webring on your webpage</h1>
+<p>Once you're on the members list, add this webring on your webpage by including: (replace <b>YOUR-SLUG</b> with the slug you chose)
+<ul>
+<li><b>{{'/YOUR-SLUG/previous'|absolute_url}}</b>
+<li><b>{{'/'|absolute_url}}</b>
+<li><b>{{'/YOUR-SLUG/next'|absolute_url}}</b>
+</ul>
+<p>You can simply copy and paste the following code into your <code>footer</code> area: (for example, your <em>flow page</em>)
+<pre>
+<a href="{{'/YOUR-SLUG/previous'|absolute_url}}">←</a>
+<a href="{{'/'|absolute_url}}">~Flow~</a>
+<a href="{{'/YOUR-SLUG/next'|absolute_url}}">→</a>
+</pre>

@@ -1,3 +1,3 @@
-slug,name,url
-rongbin,"Rongbin",https://fanrongbin.com
-slug-only-allows-lowercase-letters-digits-and-this-hyphen,"Placeholder",https://example.com
+slug,name,url,intro
+rongbin,"Rongbin",https://fanrongbin.com,"shares his experiment in managing knowledge"
+slug-only-allows-lowercase-letters-digits-and-this-hyphen,"Placeholder",https://example.com,"include a short introduction sentence here"
