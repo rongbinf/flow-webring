@@ -47,3 +47,7 @@ a:hover {
     background-color: var(--highlight);
     color: rgb(255, 255, 255);
 }
+
+code,pre {
+    font-family: var(--mono);
+}
