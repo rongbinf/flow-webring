@@ -47,4 +47,23 @@ layout: html
 &lt;/p&gt;
 {% endraw %}
 </pre>
-        
+
+<p>You can use this 88x31 badge as well. It looks like this:
+
+<div style="width:88px;height:31px;display:flex;">
+<!-- don't forget to change "YOUR-SLUG" to your slug -->
+<a href="https://flow-webring.netlify.app/YOUR-SLUG/previous"><img src="{{'/flow-badge-prev-next.png'|relative_url}}"></a>
+<a href="https://flow-webring.netlify.app"><img src="{{'/flow-badge.png'|relative_url}}"></a>
+<a href="https://flow-webring.netlify.app/YOUR-SLUG/next"><img src="{{'/flow-badge-prev-next.png'|relative_url}}"></a>
+</div>
+
+<pre>
+{% raw %}
+&lt;div style="width:88px;height:31px;display:flex;flex-direction:row;"&gt;
+&lt;!-- don't forget to change "YOUR-SLUG" to your slug --&gt;
+&lt;a href="https://flow-webring.netlify.app/YOUR-SLUG/previous"&gt;&lt;img src="{{'/flow-badge-prev-next.png'|relative_url}}"&gt;&lt;/a&gt;
+&lt;a href="https://flow-webring.netlify.app"&gt;&lt;img src="{{'/flow-badge.png'|relative_url}}"&gt;&lt;/a&gt;
+&lt;a href="https://flow-webring.netlify.app/YOUR-SLUG/next"&gt;&lt;img src="{{'/flow-badge-prev-next.png'|relative_url}}"&gt;&lt;/a&gt;
+&lt;/div&gt;
+{% endraw %}
+</pre>

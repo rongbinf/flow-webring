@@ -14,17 +14,19 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 0 15px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 80ch;
+    padding: 2rem 2rem 10rem 2rem;
 }
 
 footer {
     position: fixed;
     bottom: 1rem;
+    left: 2rem;
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -47,6 +49,14 @@ a {
 a:hover {
     background-color: var(--highlight);
     color: rgb(255, 255, 255);
+}
+
+a[href="/join"] {
+    border: 1px solid var(--highlight);
+    padding: 2px 8px;
+    border-radius: 50px;
+    white-space: nowrap;
+    line-height: 2;
 }
 
 code,pre {
